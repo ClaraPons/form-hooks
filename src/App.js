@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { useState } from 'react';
-import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 
 function App() {
   
@@ -29,6 +27,8 @@ function App() {
     setPaswword(e.target.value)
     if(e.target.value.length > 5){
       setpasswordIsValid(true)
+      } else{
+        setpasswordIsValid(false)
       }
   }
 
